@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 00:44:57 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 01:42:43 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 01:43:48 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_iterative_factorial(int nb)
 	int next_result;
 
 	result = 1;
-	if (nb <= 0)
+	if (nb < 0)
 		return (0);
 	if (nb == 1 || nb == 0)
 		return (1);

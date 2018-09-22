@@ -6,7 +6,7 @@
 /*   By: seli <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 01:34:01 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 01:41:01 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 01:43:59 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_recursive_factorial(int nb)
 
 	if (nb == 1 || nb == 0)
 		return (1);
-	if (nb <= 0)
+	if (nb < 0)
 		return (0);
 	result = ft_recursive_factorial(nb - 1);
 	next_result = result * nb;
