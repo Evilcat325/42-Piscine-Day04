@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 22:00:22 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 22:45:12 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 22:48:19 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,7 @@ void	ft_find_position(int column)
 	while (position < 8)
 	{
 		if (ft_queen_meet(column, position))
-		{
 			position++;
-			continue;
-		}
 		else
 		{
 			g_p[column] = position++;
