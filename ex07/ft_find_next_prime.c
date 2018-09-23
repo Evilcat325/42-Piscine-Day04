@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/22 15:41:50 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 21:42:03 by seli             ###   ########.fr       */
+/*   Created: 2018/09/22 16:35:31 by seli              #+#    #+#             */
+/*   Updated: 2018/09/22 21:42:28 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int nb)
+int	ft_is_prime(int nb)
 {
-	int	root = 1;
-	if (nb <= 0)
+	int index;
+
+	if (nb < 2)
 		return (0);
-	while (root * root <= nb)
+	index = 2;
+	while (index * index <= nb)
 	{
-		if (root * root == nb)
-			return (root);
-		root++;
+		if (nb % index == 0)
+			return (0);
+		index++;
 	}
-	return (0);
+	return (1);
+}
+
+int	ft_find_next_prime(int nb)
+{
+	while (!ft_is_prime(nb))
+		nb++;
+	return nb;
 }
