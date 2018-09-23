@@ -6,7 +6,7 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 22:00:22 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 22:48:19 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 23:02:20 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ft_find_position(int column)
 			g_p[column] = position++;
 			if (column == 7) g_count++;
 			ft_find_position(column + 1);
-		}		
+		}
 	}
 }
 

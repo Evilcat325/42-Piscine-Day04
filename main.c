@@ -6,16 +6,16 @@
 /*   By: seli <seli@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/22 02:15:28 by seli              #+#    #+#             */
-/*   Updated: 2018/09/22 22:42:28 by seli             ###   ########.fr       */
+/*   Updated: 2018/09/22 23:00:29 by seli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_eight_queens_puzzle(void);
+void	ft_eight_queens_puzzle_2(void);
 
-int	main(void)
+int		main(void)
 {
-	printf("%d\n", ft_eight_queens_puzzle());
+	ft_eight_queens_puzzle_2();
 	return (0);
 }
